@@ -17,7 +17,7 @@ async def on_message(message):
     if message.content.startswith('!'):
         prompt = message.content[1:]
         response = openai.Completion.create(
-            engine="",  # Select a base engine option or your own fine-tuned model here
+            engine="",  # Select a base model or your own fine-tuned model here
             prompt=prompt,
             max_tokens=80,
             n=1,
