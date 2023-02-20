@@ -13,8 +13,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('!generate_image'):
-        prompt = message.content[15:]
+    if message.content.startswith('#'):
+        prompt = message.content[1:]
         # Make a request to the DALL·E API
         response = requests.post(
             "https://api.openai.com/v1/images/generations",
