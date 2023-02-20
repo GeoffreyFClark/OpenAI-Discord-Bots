@@ -1,11 +1,14 @@
 import discord
 import requests
 import json
+import io
+import openai
 
-api_key = "OPEN AI API KEY HERE"  # Obtain from openAI platform
+api_key = "OPENAI API KEY HERE"
 
 # Discord bot setup
-client = discord.Client()
+intents = discord.Intents().all()
+client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
@@ -13,29 +16,23 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('#'):
+    if message.content.startswith('%'):
         prompt = message.content[1:]
         # Make a request to the DALL·E API
-        response = requests.post(
-            "https://api.openai.com/v1/images/generations",
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {api_key}"
-            },
-            data=json.dumps({
-                "model": "image-alpha-001",
-                "prompt": prompt,
-                "num_images": 1,
-                "size": "1024x1024",
-                "response_format": "url"
-            })
-        )
-        # Check if the request was successful
-        if response.status_code == 200:
-            image_url = response.json()["data"][0]["url"]
+        try:
+            response = openai.Image.create(
+                model="image-alpha-001",
+                prompt=prompt,
+                num_images=1,
+                size="512x512",
+                response_format="url"
+            )
+            image_url = response['data'][0]['url']
             # Send the generated image in the Discord channel
-            await message.channel.send(image_url)
-        else:
+            file = discord.File(io.BytesIO(requests.get(image_url).content), filename="image.jpg")
+            await message.channel.send(file=file)
+        except (requests.exceptions.RequestException, json.JSONDecodeError, openai.error.OpenAIError) as e:
+            print(e)
             await message.channel.send("Failed to generate image. Please try again later.")
 
-client.run("DISCORD BOT TOKEN HERE")  # Obtain from Discord Developer Portal
+client.run("DISCORD BOT TOKEN HERE")
