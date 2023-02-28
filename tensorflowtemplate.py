@@ -31,9 +31,9 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-
-    input_text = message.content
-    response = generate_answer(input_text, model)
-    await message.channel.send(response)
+    if message.content.startswith('!'):  
+        input_text = message.content[1:]  
+        response = generate_answer(input_text, model)
+        await message.channel.send(response)
 
 client.run("DISCORD BOT TOKEN HERE")  # Obtain from Discord Developer Portal
