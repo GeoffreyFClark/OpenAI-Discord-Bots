@@ -2,7 +2,7 @@ import discord
 import tensorflow as tf
 import numpy as np
 
-# Load the pre-trained model
+# Load base model or your own model
 model = tf.keras.models.load_model("model.h5")
 
 # Function to generate answers
