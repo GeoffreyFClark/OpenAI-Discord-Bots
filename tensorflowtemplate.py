@@ -33,7 +33,7 @@ async def on_message(message):
         return
     if message.content.startswith('!'):  
         input_text = message.content[1:]  
-        response = generate_answer(input_text, model)
+        response = generate_answer(input_text, model)  # Feel free to modify response string
         await message.channel.send(response)
 
 client.run("DISCORD BOT TOKEN HERE")  # Obtain from Discord Developer Portal
