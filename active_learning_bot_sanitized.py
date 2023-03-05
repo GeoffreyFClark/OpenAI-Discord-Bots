@@ -11,10 +11,12 @@ client = discord.Client(intents=intents)
 
 responses = {}
 
+
 @client.event
 async def on_ready():
     print(f'SUCCESSFULLY logged in as {client.user}')
 
+    
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -58,28 +60,27 @@ async def on_reaction_add(reaction, user):
                 reward = 1 if str(reaction.emoji) == "👍" else -1
                 for i, token_logprobs in enumerate(logprobs):
                     token = response.choices[0].text[i]
-                    token_reward = token_logprobs[token]["token_logprob"] * reward
-                    openai.Completion.create(
-                        engine="davinci:ft-personal-2023-03-05-12-27-58",
-                        prompt=prompt + token,
-                        max_tokens=0,
-                        n=1,
-                        logprobs=10,
-                        echo=True,
-                        stop="\n",
-                        temperature=0,
-                        stop_sequence="\n",
-                        presence_penalty=0.0,
-                        frequency_penalty=0.0,
-                        stop_penalty=0.0,
-                        logit_bias={token: token_reward} # update the logit_bias with the reward signal
-                    )
+                    if isinstance(token_logprobs, dict):
+                        token_reward = token_logprobs[token]["token_logprob"] * reward
+                        openai.Completion.create(
+                            engine="davinci:ft-personal-2023-03-05-12-27-58",
+                            prompt=prompt + token,
+                            max_tokens=0,
+                            n=1,
+                            logprobs=10,
+                            echo=True,
+                            stop="\n",
+                            temperature=0,
+                            stop_sequence="\n",
+                            presence_penalty=0.0,
+                            frequency_penalty=0.0,
+                            stop_penalty=0.0,
+                            logit_bias={token: token_reward} # update the logit_bias with the reward signal
+                        )
                 if reward == 1:
                     await reaction.message.channel.send(f'{user} reinforced the response: "{prompt}"')
                 else:
                     await reaction.message.channel.send(f'{user} penalized the response: "{prompt}"')
-
-
 
 
 client.run("DISCORD TOKEN HERE")  # replace
