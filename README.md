@@ -1,6 +1,3 @@
-# ML-AI-Discord-Bots
-Basic templates I made for using either OpenAI or TensorFlow to create ML AI chatbots for Discord servers. Added a template for an image-generating ML AI openAI discord bot.
-
+March 5, 2023: 
 Added basic logprobs reinforcement functionality to one bot. active_learning_bot_sanitized.py
-
-Uploaded a 1762 line training dataset of comments web-scraped from reddit that I then cleaned up + formatted. tdata_slice.jsonl 
+Also uploaded a 1762 line training dataset of comments web-scraped from reddit that I then cleaned up + formatted. tdata_slice.jsonl 
