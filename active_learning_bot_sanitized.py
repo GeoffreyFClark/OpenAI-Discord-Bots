@@ -26,7 +26,7 @@ async def on_message(message):
     if message.content.startswith('!'):
         prompt = message.content[1:]
         response = openai.Completion.create(
-            engine="davinci:ft-personal-2023-03-05-12-27-58",  # My personally trained model, replace with yours or a base model
+            engine="davinci:ft-personal-2023-03-05-12-27-58",  # Replace my trained model with yours or a base model
             prompt=prompt + ' ->',
             max_tokens=100,
             n=1,
