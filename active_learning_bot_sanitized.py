@@ -1,6 +1,5 @@
 import discord
 import openai
-import re
 
 # TO DO: Add OpenAI Key and Discord Token
 
