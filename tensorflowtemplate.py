@@ -2,7 +2,7 @@ import discord
 import tensorflow as tf
 import numpy as np
 
-# Load base model or your own model
+# Load the pre-trained model
 model = tf.keras.models.load_model("model.h5")
 
 # Function to generate answers
@@ -31,9 +31,9 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.content.startswith('!'):  
-        input_text = message.content[1:]  
-        response = generate_answer(input_text, model)  
-        await message.channel.send(response)
+
+    input_text = message.content
+    response = generate_answer(input_text, model)
+    await message.channel.send(response)
 
 client.run("DISCORD BOT TOKEN HERE")  # Obtain from Discord Developer Portal
