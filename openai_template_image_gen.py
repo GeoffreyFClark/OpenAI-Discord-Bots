@@ -1,7 +1,4 @@
 import discord
-import requests
-import json
-import io
 import openai
 
 api_key = "OPENAI API KEY HERE"
