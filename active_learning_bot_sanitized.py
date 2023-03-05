@@ -4,7 +4,7 @@ import re
 
 # TO DO: Add OpenAI Key and Discord Token
 
-openai.api_key = "OPENAI KEY HERE"
+openai.api_key = "OPENAI KEY HERE"  # Replace
 
 intents = discord.Intents().all()
 client = discord.Client(intents=intents)
@@ -19,13 +19,13 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.content == 'bots.shutdown': # replace with your custom command
+    if message.content == 'bots.shutdown':  # replace with your custom command
         await message.channel.send('Shutting down...')
         await client.close()
     if message.content.startswith('!'):
         prompt = message.content[1:]
         response = openai.Completion.create(
-            engine="davinci:ft-personal-2023-03-05-12-27-58",
+            engine="davinci:ft-personal-2023-03-05-12-27-58",  # My personally trained model, replace with yours or a base model
             prompt=prompt + ' ->',
             max_tokens=100,
             n=1,
@@ -82,4 +82,4 @@ async def on_reaction_add(reaction, user):
 
 
 
-client.run("DISCORD TOKEN HERE")
+client.run("DISCORD TOKEN HERE")  # replace
