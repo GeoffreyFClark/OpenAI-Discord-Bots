@@ -1,7 +1,7 @@
 import discord
 import openai
 
-api_key = "OPENAI API KEY HERE"
+openai_api_key = "OPENAI API KEY HERE"
 
 # Discord bot setup
 intents = discord.Intents().all()
@@ -22,7 +22,8 @@ async def on_message(message):
                 prompt=prompt,
                 num_images=1,
                 size="512x512",
-                response_format="url"
+                response_format="url",
+                api_key = openai_api_key
             )
             image_url = response['data'][0]['url']
             # Send the generated image in the Discord channel
