@@ -1,4 +1,4 @@
-Created template for an image-generating ML AI openAI discord bot. (openai_template_image_gen.py)
+Coded + added template for an image-generating ML AI openAI discord bot. (openai_template_image_gen.py)
 
 Added basic logprobs reinforcement functionality to one bot. (active_learning_bot_sanitized.py) 
 
