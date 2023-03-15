@@ -2,4 +2,4 @@ Coded + added template for an image-generating ML AI openAI discord bot. (openai
 
 Added basic logprobs reinforcement functionality to one bot. (active_learning_bot_sanitized.py) 
 
-Added a 1762 line prepared training dataset of comments web-scraped from reddit (many from r/jokes) that I iterated through to clean up + format. (tdata_slice.jsonl)
+Added a 1762 line training dataset of comments web-scraped from reddit (many from r/jokes) that I iterated through to clean up + format. (tdata_slice.jsonl)
