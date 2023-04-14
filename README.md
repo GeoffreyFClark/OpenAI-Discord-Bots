@@ -1,5 +1,6 @@
-Created a template for an image-generating ML AI openAI discord bot. (openai_template_image_gen.py)
+Created before Discord released Clyde
 
+Added template for an image-generating ML AI openAI discord bot. (openai_template_image_gen.py)
 
 Added a 1700+ line training dataset of comments web-scraped from reddit (many from r/jokes) cleaned up + formatted. (tdata_slice.jsonl)
 
