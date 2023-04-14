@@ -12,8 +12,8 @@ Screenshot of reinforcement being tested (Bot does not watch anime --> bot does 
 
 Amusing examples of bots in action:
 
-![image](https://user-images.githubusercontent.com/97141856/232142257-338d62fe-2e99-40e9-ae92-9ee6932b45f6.png)
 ![image](https://user-images.githubusercontent.com/97141856/232141544-bcc695b9-05e5-40c9-8371-51585bb7ee91.png)
+![image](https://user-images.githubusercontent.com/97141856/232142257-338d62fe-2e99-40e9-ae92-9ee6932b45f6.png)
 
 ![image](https://user-images.githubusercontent.com/97141856/232140360-30bcc745-58da-4002-a5f1-913482bb7c66.png)
 
