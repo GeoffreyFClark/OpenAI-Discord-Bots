@@ -10,7 +10,7 @@ Screenshot of reinforcement being tested (Bot does not watch anime --> bot does 
 ![image](https://user-images.githubusercontent.com/97141856/228354274-85183eef-9703-4f58-bc7c-5ec33e56c006.png)
 
 
-##Funny examples of bots in action:
+Amusing examples of bots in action:
 
 ![image](https://user-images.githubusercontent.com/97141856/232140360-30bcc745-58da-4002-a5f1-913482bb7c66.png)
 
