@@ -1,7 +1,7 @@
 import discord
 import openai
 
-# TO DO: Add OpenAI Key and Discord Token
+# Note placeholders for OpenAI Key and Discord Token
 
 openai.api_key = "OPENAI KEY HERE"  # Replace
 
