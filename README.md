@@ -8,7 +8,7 @@ Templates for: </br>
 </br>
 </br>
 
-Screenshot of reinforcement test (Bot does not watch anime --> bot does watch anime): 
+Screenshot of reinforcement test (Bot does not watch anime --> Bot does watch anime): 
 
 ![image](https://user-images.githubusercontent.com/97141856/228354274-85183eef-9703-4f58-bc7c-5ec33e56c006.png)
 
