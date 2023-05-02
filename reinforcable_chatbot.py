@@ -1,7 +1,7 @@
 import discord
 import openai
 
-openai.api_key = "OPENAI KEY HERE"  # Input OpenAI Key here in quotes as a string
+openai.api_key = ""  # Input OpenAI Key here in quotes as a string
 discord_token = "DISCORD TOKEN HERE"  # Input Discord Token here
 model_name = "ENGINE MODEL NAME HERE"  # Input Engine Model Name here 
 
@@ -23,9 +23,9 @@ async def on_message(message):
     if message.content == 'bots.shutdown': 
         await message.channel.send('Shutting down...')
         await client.close()
-    if message.content.startswith('!'):
+    if message.content.startswith('!'):  # Start discord message with ! to prompt chatbot
         prompt = message.content[1:]
-        response = openai.Completion.create(
+        response = openai.Completion.create(  # See API documentation for further parameters
             engine=model_name,  
             prompt=prompt + ' ->',
             max_tokens=100,
