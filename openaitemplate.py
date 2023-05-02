@@ -24,6 +24,7 @@ async def on_message(message):
             max_tokens=80,
             n=1,
             temperature=0.5,
+            stop=["\n"]
         )
         generated_text = response["choices"][0]["text"]
 
