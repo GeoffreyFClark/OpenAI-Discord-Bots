@@ -40,9 +40,9 @@ Congratulations! You have successfully created your own OpenAI Discord bot. Run 
 ![image](https://user-images.githubusercontent.com/97141856/232142257-338d62fe-2e99-40e9-ae92-9ee6932b45f6.png)<br>
 ![image](https://user-images.githubusercontent.com/97141856/235574791-a071a70d-7ced-4d08-a23b-d12f8ca18f6d.png)<br>
 ![image](https://user-images.githubusercontent.com/97141856/235583094-7b6f43c4-9a26-4829-b93d-efae02b507df.png)<br>
-![image](https://user-images.githubusercontent.com/97141856/232136475-e73a064b-1890-410e-9b84-1ae3ae82ff64.png)<br>
 ![image](https://user-images.githubusercontent.com/97141856/232173908-812449e1-1b7a-48e0-b02a-8392ef97b5db.png)<br>
 ![image](https://user-images.githubusercontent.com/97141856/235572603-82dadf61-421c-4654-bc5f-9e1376a8f02e.png)<br>
+![image](https://user-images.githubusercontent.com/97141856/232136475-e73a064b-1890-410e-9b84-1ae3ae82ff64.png)<br>
 ![image](https://user-images.githubusercontent.com/97141856/232136640-5f126203-4b2b-4b2b-b0e9-21bb631203f0.png)<br>
 
 Reinforcement functionality test (Bot does not watch anime --> Bot does watch anime): 
