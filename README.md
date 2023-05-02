@@ -1,6 +1,6 @@
 ## In this Repository:
 - Image-generating OpenAI Discord bot (openai_template_image_gen.py) </br>
-- OpenAI and Tensorflow Discord chatbot generic templates (openaitemplate.py) (tensorflowtemplate.py) </br>
+- OpenAI Discord chatbot generic template (openaitemplate.py)</br>
 - OpenAI Discord Chatbot w/ basic reinforcement implementation via logprobs: (reinforceable_chatbot.py) </br>
 - A sample training dataset of formatted web-scraped comments from Reddit's r/jokes (RedditTrainingData.jsonl) </br>
 
