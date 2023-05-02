@@ -2,7 +2,7 @@
 - Image-generating OpenAI Discord bot (openai_template_image_gen.py) </br>
 - OpenAI Discord Chatbot template (openaitemplate.py)</br>
 - OpenAI Discord Chatbot w/ basic reinforcement implementation via logprobs: (reinforceable_chatbot.py) </br>
-- A sample training dataset of formatted web-scraped comments from Reddit's r/jokes (RedditTrainingData.jsonl) </br>
+- Training dataset sample of formatted web-scraped comments from Reddit's r/jokes (RedditTrainingData.jsonl) </br>
 
 ## Follow these steps to easily create your own OpenAI Discord bot:
 
