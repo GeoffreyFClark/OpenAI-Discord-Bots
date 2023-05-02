@@ -16,7 +16,7 @@
 • Save the Discord Token generated for your bot, as you will need it later.</br>
 
 3. Authorize the Bot:</br>
-• In the side panel, select the "OAuth2" tab.</br>
+• In the side panel, select the "OAuth2" tab followed by "URL Generator."</br>
 • In the "Scopes" section, select "bot."</br>
 • In the "Bot Permissions" section, choose the permissions you want to grant to your bot.</br>
 • Use the generated URL to add the bot to your Discord servers.</br>
