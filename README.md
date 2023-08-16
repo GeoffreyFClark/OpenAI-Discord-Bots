@@ -28,7 +28,7 @@
 5. Configure the Bot:<br>
 • Clone or download the template from this repository.<br>
 • Install dependencies, e.g., the `openai` and `discord` libraries, using the following command: `pip install openai discord`<br>
-• Choose an OpenAI model/engine to use with your bot. You can either select one from the [OpenAI Models page](https://platform.openai.com/docs/models) (e.g. "text-davinci-002") or reference the [OpenAI API documentation](https://platform.openai.com/docs/api-reference) to fine-tune/train your own model/engine using your own dataset.<br>
+• Choose an OpenAI model/engine to use with your bot. You can either select one from the [OpenAI Models page](https://platform.openai.com/docs/models) (e.g. "text-davinci-002") or reference the [OpenAI API documentation](https://platform.openai.com/docs/api-reference) to fine-tune/train your own model using your own dataset.<br>
 • Input the Discord Token, OpenAI API key, and model/engine into the appropriate fields in the template.<br>
 
 Congratulations! You have successfully created your own OpenAI Discord bot. Run the Python script to bring your bot online, and enjoy interacting with your AI-powered bot on Discord!
